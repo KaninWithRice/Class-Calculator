@@ -14,4 +14,11 @@ class Calculator:
         mul = num1 * num2
         return mul
 # Division
+    def division(self, num1, num2):
+        try:
+            div = num1 / num2
+        except ZeroDivisionError:
+            print("\nDivision by Zero Error")
+
+        return div
 # Math Operation
