@@ -19,3 +19,12 @@ elif operation == "m":
 
 elif operation == "d":
     print(num1, "/", num2, "=", calc.division(num1, num2))
+
+more_input = ui.try_again()
+if more_input == "y":  
+    continue
+elif more_input == "n":
+    print("Thank you for using Simple Calculator")
+else:
+    print("\nInvalid Input")
+

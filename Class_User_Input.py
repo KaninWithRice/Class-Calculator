@@ -13,13 +13,5 @@ class UserInput:
         return operation
     
     def try_again(self):
-        while True:
-            more_input = input("Do you want to Enter another? (y/n): ")
-            if more_input == "y":  
-                continue
-            elif more_input == "n":
-                print("Thank you for using Simple Calculator")
-                break
-            else:
-                print("\nInvalid Input")
-                break
+        more_input = input("Do you want to Enter another? (y/n): ")
+        return more_input
