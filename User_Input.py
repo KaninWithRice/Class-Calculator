@@ -5,3 +5,12 @@ class UserInput:
     def num2_input(self):
         num2 = float(input("Enter the second number:"))
         return num2
+    def operation_input(self):
+        print("\nList Of Operation \n")
+        print("[a] Add")
+        print("[s] Subtract")
+        print("[m] Multiply")
+        print("[d] Divide")
+        
+        operation = input("Enter an Operation [a/s/m/d]: ")
+        return operation
