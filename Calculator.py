@@ -1,30 +1,33 @@
-from Class_Calc import Calculator
-from Class_User_Input import UserInput
+def start():
+    from Class_Calc import Calculator
+    from Class_User_Input import UserInput
 
-calc = Calculator()
-ui = UserInput()
+    calc = Calculator()
+    ui = UserInput()
 
-num1 = ui.num_input()
-num2 = ui.num_input()
+    num1 = ui.num_input()
+    num2 = ui.num_input()
 
-operation = ui.operation_input()
-if operation == "a":
-    print(num1, "+", num2, "=", calc.addition(num1, num2))
+    operation = ui.operation_input()
+    if operation == "a":
+        print(num1, "+", num2, "=", calc.addition(num1, num2))
 
-elif operation == "s":
-    print(num1, "-", num2, "=", calc.subtraction(num1, num2))
+    elif operation == "s":
+        print(num1, "-", num2, "=", calc.subtraction(num1, num2))
 
-elif operation == "m":
-    print(num1, "*", num2, "=", calc.multiplication(num1, num2))
+    elif operation == "m":
+        print(num1, "*", num2, "=", calc.multiplication(num1, num2))
 
-elif operation == "d":
-    print(num1, "/", num2, "=", calc.division(num1, num2))
+    elif operation == "d":
+        print(num1, "/", num2, "=", calc.division(num1, num2))
 
-more_input = ui.try_again()
-if more_input == "y":  
-    continue
-elif more_input == "n":
-    print("Thank you for using Simple Calculator")
-else:
-    print("\nInvalid Input")
+    more_input = ui.try_again()
+    if more_input == "y":  
+        start()
+    elif more_input == "n":
+        print("Thank you for using Simple Calculator")
+    else:
+        print("\nInvalid Input")
+        exit()
+start()
 
