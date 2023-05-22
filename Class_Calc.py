@@ -19,6 +19,21 @@ class Calculator:
             div = num1 / num2
         except ZeroDivisionError:
             print("\nDivision by Zero Error")
-
         return div
 # Math Operation
+    def operation(self, operation):
+        while operation != 0:
+            if self.operation == "a":
+                print(self.num1, "+", self.num2, "=", self.addition())
+
+            elif self.operation == "s":
+                print(self.num1, "-", self.num2, "=", self.subtraction())
+
+            elif self.operation == "m":
+                print(self.num1, "*", self.num2, "=", self.multiplication())
+
+            elif self.operation == "d":
+                print(self.num1, "/", self.num2, "=", self.division())
+            else:
+                return operation
+            
