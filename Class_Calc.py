@@ -10,5 +10,8 @@ class Calculator:
         sub = num1 - num2
         return sub
 # Multiplication
+    def multiplication(self, num1, num2):
+        mul = num1 * num2
+        return mul
 # Division
 # Math Operation
