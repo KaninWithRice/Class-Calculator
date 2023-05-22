@@ -6,6 +6,9 @@ class Calculator:
         add = num1 + num2
         return add
 # Subtraction
+    def subtraction(self, num1, num2):
+        sub = num1 - num2
+        return sub
 # Multiplication
 # Division
 # Math Operation
