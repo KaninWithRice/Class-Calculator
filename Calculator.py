@@ -6,6 +6,11 @@ def start():
     
     calc = Calculator()
     ui = UserInput()
+
+    # Introduction
+    print("")
+    print("WELCOME TO SIMPLE CALCULATOR".center(40," ") )
+    print("By: Mishal Noroña".center(40," ") )
     # Ask for user's Number Input 
     num1 = ui.num_input()
     num2 = ui.num_input()
