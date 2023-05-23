@@ -1,19 +1,19 @@
 # Mohammad Mishal S. Noroña | BSCPE 1-5 | Assignment #7
 # Create a Class Calculator
 class Calculator:
-# Addition
+# Addition Function
     def addition(self, num1, num2):
         add = num1 + num2
         return add
-# Subtraction
+# Subtraction Function
     def subtraction(self, num1, num2):
         sub = num1 - num2
         return sub
-# Multiplication
+# Multiplication Function
     def multiplication(self, num1, num2):
         mul = num1 * num2
         return mul
-# Division
+# Division Function
     def division(self, num1, num2):
         try:
             div = num1 / num2
