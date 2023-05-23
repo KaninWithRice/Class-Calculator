@@ -1,9 +1,11 @@
 # Mohammad Mishal S. Noroña | BSCPE 1-5 | Assignment #7
+# Import Colorama
+import colorama
+from colorama import Fore, Back, Style
+colorama.init()
+# Add Time Delay
+import time
 def start():
-    # Import Colorama
-    import colorama
-    from colorama import Fore, Back, Style
-    colorama.init()
     # Import Classes
     from Class_Calc import Calculator
     from Class_User_Input import UserInput
@@ -20,8 +22,6 @@ def start():
     num2 = ui.num_input()
     # Ask for Operation Input
     operation = ui.operation_input()
-    # Add Time Delay
-    import time
     if operation == "a":
         print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
         time.sleep(1.0)
