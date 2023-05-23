@@ -5,11 +5,10 @@ from colorama import Fore, Back, Style
 colorama.init()
 # Add Time Delay
 import time
-def start():
-    # Import Classes
-    from Class_Calc import Calculator
-    from Class_User_Input import UserInput
-    
+# Import Classes
+from Class_Calc import Calculator
+from Class_User_Input import UserInput
+def start():    
     calc = Calculator()
     ui = UserInput()
 
