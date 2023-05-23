@@ -1,5 +1,9 @@
 # Mohammad Mishal S. Noroña | BSCPE 1-5 | Assignment #7
 def start():
+    # Import Colorama
+    import colorama
+    from colorama import Fore, Back, Style
+    colorama.init()
     # Import Classes
     from Class_Calc import Calculator
     from Class_User_Input import UserInput
@@ -9,8 +13,8 @@ def start():
 
     # Introduction
     print("")
-    print("WELCOME TO SIMPLE CALCULATOR".center(40," ") )
-    print("By: Mishal Noroña".center(40," ") )
+    print(Fore.CYAN + "WELCOME TO SIMPLE CALCULATOR".center(40," ") )
+    print(Fore.YELLOW + "By: Mishal Noroña".center(40," ") + Fore.WHITE )
     # Ask for user's Number Input 
     num1 = ui.num_input()
     num2 = ui.num_input()
@@ -19,24 +23,24 @@ def start():
     # Add Time Delay
     import time
     if operation == "a":
-        print("\nCalculating Please wait......\n")
+        print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
         time.sleep(1.0)
-        print(num1, "+", num2, "\nAnswer =", calc.addition(num1, num2))
+        print(num1, "+", num2, Fore.LIGHTGREEN_EX + "\nAnswer =", calc.addition(num1, num2))
         # If user enters "a" Print output of addition
     elif operation == "s":
-        print("\nCalculating Please wait......\n")
+        print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
         time.sleep(1.0)
-        print(num1, "-", num2, "\nAnswer =", calc.subtraction(num1, num2))
+        print(num1, "-", num2, Fore.LIGHTGREEN_EX + "\nAnswer =", calc.subtraction(num1, num2))
         # If user enters "s" Print output of subtraction
     elif operation == "m":
-        print("\nCalculating Please wait......\n")
+        print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
         time.sleep(1.0)
-        print(num1, "*", num2, "\nAnswer =", calc.multiplication(num1, num2))
+        print(num1, "*", num2, Fore.LIGHTGREEN_EX + "\nAnswer =", calc.multiplication(num1, num2))
         # If user enters "m" Print output of multiplication
     elif operation == "d":
-        print("\nCalculating Please wait......\n")
+        print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
         time.sleep(1.0)
-        print(num1, "/", num2, "\nAnswer =", calc.division(num1, num2))
+        print(num1, "/", num2, Fore.LIGHTGREEN_EX + "\nAnswer =", calc.division(num1, num2))
         # If user enters "d" Print output of division
 
     # Ask for another Input

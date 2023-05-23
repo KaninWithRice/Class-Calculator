@@ -8,8 +8,8 @@ class UserInput:
                 num = float(input("Enter a number:"))
                 return num
             except ValueError:
-                print("Invalid Input")
-                print("Enter a Numerical Value")
+                print("\nInvalid Input")
+                print("Enter a Numerical Value\n")
                 continue
     # Operation Input Function
     def operation_input(self):
@@ -19,9 +19,9 @@ class UserInput:
         print("[m] Multiply")
         print("[d] Divide")
 
-        operation = input("Enter an Operation [a/s/m/d]: ")
+        operation = input("\nEnter an Operation [a/s/m/d]: ")
         return operation
     # Ask user for another input
     def try_again(self):
-        more_input = input("Do you want to Enter another? (y/n): ")
+        more_input = input("\nDo you want to Enter another? (y/n): ")
         return more_input
