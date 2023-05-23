@@ -15,8 +15,12 @@ class Calculator:
         return mul
 # Division Function
     def division(self, num1, num2):
-        try:
-            div = num1 / num2
-        except ZeroDivisionError:
-            print("\nDivision by Zero Error")
-        return div
+        while True:
+            try:
+                div = num1 / num2
+                return div
+            except ZeroDivisionError:
+                print("\nDivision by Zero Error")
+                print("You can't divide numbers to zero\n")
+                break
+                

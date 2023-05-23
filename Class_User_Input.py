@@ -3,8 +3,14 @@
 class UserInput:
     # Number Input Function
     def num_input(self):
-        num = float(input("Enter a number:"))
-        return num
+        while True:
+            try:
+                num = float(input("Enter a number:"))
+                return num
+            except ValueError:
+                print("Invalid Input")
+                print("Enter a Numerical Value")
+                continue
     # Operation Input Function
     def operation_input(self):
         print("\nList Of Operation \n")
