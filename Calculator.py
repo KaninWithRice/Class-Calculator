@@ -8,10 +8,11 @@ import time
 # Import Classes
 from Class_Calc import Calculator
 from Class_User_Input import UserInput
+from Calculator_Inh import calculator_inh
 def start():    
     calc = Calculator()
     ui = UserInput()
-
+    inh = calculator_inh()
     # Introduction
     print("")
     print(Fore.CYAN + "WELCOME TO SIMPLE CALCULATOR".center(40," ") )
