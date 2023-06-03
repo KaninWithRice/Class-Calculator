@@ -8,11 +8,11 @@ import time
 # Import Classes
 from Class_Calc import Calculator
 from Class_User_Input import UserInput
-from Calculator_Inh import calculator_inh
+from Calculator_Inh import calc_inh
 def start():    
     calc = Calculator()
     ui = UserInput()
-    inh = calculator_inh()
+    inh = calc_inh()
     # Introduction
     print("")
     print(Fore.CYAN + "WELCOME TO SIMPLE CALCULATOR".center(40," ") )
@@ -42,7 +42,10 @@ def start():
         time.sleep(1.0)
         print(num1, "/", num2, Fore.LIGHTGREEN_EX + "\nAnswer =", calc.division(num1, num2))
         # If user enters "d" Print output of division
-
+    elif operation == "p":
+        print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
+        time.sleep(1.0)
+        print(num2, "%" + " of", num1, Fore.LIGHTGREEN_EX + "\nAnswer =", inh.percent(num1, num2))
     # Ask for another Input
     more_input = ui.try_again()
     if more_input == "y":  
