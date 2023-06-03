@@ -19,8 +19,9 @@ class UserInput:
         print("[m] Multiply")
         print("[d] Divide")
         print("[p] Percent")
+        print("[e] Exponent")
 
-        operation = input("\nEnter an Operation [a/s/m/d/p]: ")
+        operation = input("\nEnter an Operation [a/s/m/d/p/e]: ")
         return operation
     # Ask user for another input
     def try_again(self):

@@ -17,7 +17,7 @@ def start():
     print("")
     print(Fore.CYAN + "WELCOME TO SIMPLE CALCULATOR".center(40," ") )
     print(Fore.YELLOW + "By: Mishal Noroña".center(40," ") + Fore.WHITE )
-    print(Fore.YELLOW + "Note: Calculating Percent \n Number1: (Value) \n Number2: (Percent) \n".center(40," ") + Fore.WHITE )
+    print(Fore.YELLOW + "\n Note: Calculating Percent \n Number1: (Value) \n Number2: (Percent) \n".center(40," ") + Fore.WHITE )
     # Ask for user's Number Input 
     num1 = ui.num_input()
     num2 = ui.num_input()
@@ -47,10 +47,13 @@ def start():
         print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
         time.sleep(1.0)
         print(num2, "%" + " of", num1, Fore.LIGHTGREEN_EX + "\nAnswer =", inh.percent(num1, num2))
+        # If user enters "p" Print output of percent
     elif operation == "e":
         print(Fore.LIGHTBLUE_EX + "\nCalculating Please wait......\n" + Fore.YELLOW)
         time.sleep(1.0)
-        print(num1, "^", num2, Fore.LIGHTGREEN_EX + "\nAnswer =", inh.exponent(num1, num2))    
+        print(num1, "^", num2, Fore.LIGHTGREEN_EX + "\nAnswer =", inh.exponent(num1, num2))
+        # If user enters "e" Print output of exponent
+        #     
     # Ask for another Input
     more_input = ui.try_again()
     if more_input == "y":  
